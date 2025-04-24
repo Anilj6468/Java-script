@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function Practice Project</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 50px;
+        background-color: #7bfdf2;
+        color: #333;
+      }
+
+      h2 {
+        color: #2c3e50;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 5px;
+      }
+
+      p {
+        line-height: 1.6;
+        margin-bottom: 10px;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      ul li {
+        background: #3498db;
+        color: white;
+        padding: 8px 12px;
+        margin-bottom: 5px;
+        width: 200px;
+        border-radius: 4px;
+        transition: background 0.3s;
+      }
+
+      ul li:hover {
+        background: #2980b9;
+      }
+
+      button {
+        background-color: #27ae60;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #219150;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Anil Jangid</h2>
+
+    <p>
+      My name is Anil Jangid and I am from Ahmedabad, originally from Rajasthan.
+    </p>
+    <p>
+      I am a graduate from MDSU, Ajmer (Rajasthan), and currently pursuing a
+      diploma in Frontend Development at Red & White Multimedia Education,
+      Ahmedabad.
+    </p>
+
+    <ul>
+      <li onclick="home">Home</li>
+      <li>About Us</li>
+      <li>Contact Us</li>
+      <li>Register</li>
+      <li>Login</li>
+      <li>Location</li>
+    </ul>
+
+    <button onclick="test()">Click Me</button>
+
+    <script>
+      // Normal Function
+      function test() {
+        document.write("My Name is Anil Jangid");
+        document.write("<br><br>");
+        const demo =
+          "I am graduate from MDSU, Ajmer and diploma in frontend developer";
+        document.write(demo);
+      }
+
+      // Arrow Function
+      const demo = () =>
+        "I am graduate from MDSU, Ajmer and diploma in frontend developer";
+      console.log(demo());
+
+        document.write("<br><br>");
+
+      let anil = () =>
+      "I'am anil from ahmedabad and I greduate completed by rajasthan, I am Pursued by diploma in fronted edeveloper from red & White Multimedia education, Navarngpra, Ahmedabad, Gujarat";
+      document.write(anil());
+
+      // recursion
+
+      // take nothing, return nothing
+
+      function home() {
+        console.log("home function");
+      }
+
+      // take something, return nothing
+
+      function AreaofSquare() {
+        let l = 600;
+        console.log(l * l + "m2");
+      }
+
+      AreaofSquare();
+
+      function AreaofRect(l, b) {
+        console.log("Area of Reactangle " + l * b + " m2");
+      }
+
+      AreaofRect(8, 16);
+      AreaofRect(5, 9);
+
+      // take something, return something
+
+      const AreaOfCircle = (r) => {
+        let pi = 3.14;
+        let area = pi * r * r;
+        return area;
+      };
+
+      console.log(AreaOfCircle(16) + " m2");
+
+      const area = AreaOfCircle(7);
+      console.log(area);
+
+      // take nothing, return something
+
+      const hours = () => {
+        let score = Math.random() ;
+        return score;
+      };
+
+      console.log(hours());
+
+        Math.random();
+        Math.floor();
+
+        console.log(Math.floor(Math.random()));
+    </script>
+  </body>
+</html>
