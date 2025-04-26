@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  // ARRAY Method
+
+  // length - to Length value of an array
+  // Pop - to Delete the last value of Change an array
+  // Push - to Add the last value of Change an array
+  // shift - to Delete the first value Change of an array
+  // unshift - to Add the first value Change of an array
+  // splice - to add value and delete Change of an array
+  // slice - Create New array
+  // sort - Alfabet(a to Z)
+  // reverse
+  // includes - boolean(True/False)
+  // filter
+  // find
+  // join
+
+  let array = [
+    {
+      name: "Anil Jangid",
+      Job_Role: "Fronted Developer",
+      Salary: 15000,
+      Location: "Ahmedabad",
+      MobileNumber: 8769666468,
+    },
+    {
+      name: "Nisha Jangid",
+      Job_Role: "Web Designer",
+      Salary: 20000,
+      Location: "Ahmedabad",
+      MobileNumber: 8769666468,
+    },
+    {
+      name: "Rajesh Kumar",
+      Job_Role: "Ux/UI Designer",
+      Salary: 25000,
+      Location: "Kuchaman City",
+      MobileNumber: 1234567890,
+    },
+    {
+      name: "Mahesh Jangid",
+      Job_Role: "Social Media Manager",
+      Salary: 20000,
+      Location: "Chitawa",
+      MobileNumber: "9827345654",
+    },
+    {
+      name: "Falguni Pathak",
+      Job_Role: "Garba Dancer",
+      Salary: 50000,
+      Location: "Ahmedabad",
+      MobileNumber: "9870676879",
+    },
+  ];
+  console.log(array);
+
+  console.log(array.length);
+
+  // pop method - to Delete the last value of an array
+  array.pop(1, 2);
+  console.log(array);
+
+  // push method - to Add the last value of the array
+  array.push([4]);
+  console.log(array);
+
+  // shift method - to delete first value for change array
+  array.shift([{}, {}, {}, {}]);
+  console.log(array);
+
+  // unshift method - to add first value for change array
+  array.unshift([2, 1, 3, 6, 7, 8][(2, 3)]);
+  console.log(array);
+
+  let fruits = [
+    "Mango",
+    "Banana",
+    "Watermelon",
+    "Papaya",
+    "Chhikku",
+    "muskmelon",
+    "Kiwi",
+    "Apple",
+    "Lemon",
+  ];
+  console.log(fruits);
+
+  // Total Array Consulting
+  console.log(fruits.length);
+
+  // splice - to add value and delete from array
+  fruits.splice(1, 2, ["Anil Jangid"], 4, 5, "Jangid Anil", 3, 5);
+  console.log(fruits);
+
+  console.log(fruits.length);
+
+  // sort()
+  fruits.sort();
+  console.log(fruits);
+
+  // slice - to create new array
+  fruits.slice();
+  console.log(fruits);
+
+  let day = [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+  ];
+  console.log(day);
+
+  const aa = day.slice(2, 5);
+  console.log(aa);
+
+  const bb = day.slice(3, 7);
+  console.log(bb);
+
+  let employee = [
+    {
+      ename: "Anil Jangid",
+      Position: "Fronted Developer",
+      Salary: 20000,
+      Location: "Ahemdabad",
+      Mob_Number: 8769666468,
+    },
+    {
+      ename: "Nisha Jangid",
+      Position: "Web Developer",
+      Salary: 30000,
+      Location: "Ahemdabad",
+      Mob_Number: 8769666468,
+    },
+    {
+      ename: "Dinesh Jangid",
+      Position: "Web Designer Fresher",
+      Salary: 10000,
+      Location: "Ahemdabad",
+      Mob_Number: 8769666468,
+    },
+  ];
+  console.log(employee);
+  console.log(employee.length);
+
+  employee.shift();
+  console.log(employee);
+
+  employee.unshift([0]);
+  console.log(employee);
+
+  // includes boolean value (True / False)
+
+  let fruits1 = [
+    "Mango",
+    "Graphes",
+    "Chiku",
+    "Orange",
+    "Banana",
+    "Shobha",
+    "Watermelon",
+    "Apple",
+  ];
+
+  let b = fruits1.includes("Apple");
+  console.log(b);
+
+  let c = fruits1.includes("Nisha");
+  console.log(c);
+
+  // filter
+
+  let student = [
+    {
+      name: "Rajesh Jangid",
+      Age: 25,
+      Degree: "Bachelor of Architecture",
+      Skills: "Autocad, Sketchup, Adobe Photoshop, Enscape",
+      Fees: 50000,
+      Location: "Ahmedabad",
+    },
+    {
+      name: "Anil Jangid",
+      Age: 26,
+      course: "Fronted Development",
+      Degree: "Master of Development",
+      Skills: "HTML5, CSS3, Javascript",
+      Fees: 100000,
+      Location: "Ahmedabad",
+    },
+    {
+      name: "Shivam Panchal",
+      Age: 35,
+      course: "Fronted Development",
+      Degree: "Master of Development",
+      Skills: "HTML5, CSS3, Javascript",
+      Fees: 100000,
+      Location: "Ahmedabad",
+    },
+    {
+      name: "Vivek Wagela",
+      Age: 25,
+      course: "Fronted Development",
+      Degree: "Master of Development",
+      Skills: "HTML5, CSS3, Javascript",
+      Fees: 100000,
+      Location: "Ahmedabad",
+    }
+  ];
+  console.log(student); 
+
+  const m = student.filter((number, index) => number.name[3,2]);
+  console.log(m);
+</script>
