@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anil Jangid Bank Account Project</title>
+  </head>
+  <body>
+    <form id="form">
+      <h1 style="color: lightseagreen; display: inline-block">
+        New Create Account Open
+      </h1>
+      <br /><br />
+      <input
+        type="text"
+        placeholder="Customer Name"
+        id="customerName"
+      /><br /><br />
+      <input type="text" placeholder="Balance" id="balance" /><br /><br />
+      <button type="submit">Create Account</button>
+    </form>
+  </body>
+</html>
+<script>
+  class BankAccount {
+    constructor(customerName, balance) {
+      this.customerName = customerName;
+      this.accountNumber = Math.floor(Math.random() * 10000000000000000);
+      this.balance = balance;
+    }
+  }
+
+  let accounts = JSON.parse(localStorage.getItem("BankAccount")) || [];
+
+  document.getElementById("form").addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    let customerName = document.getElementById("customerName").value;
+    this.accountNumber = Math.floor(Math.random() * 10000000000000000).value;
+    let balance = parseFloat(document.getElementById("balance").value);
+
+    console.log(customerName);
+    console.log(balance);
+
+    let account = new BankAccount(customerName, balance);
+    accounts.push(account); // Fixed this line
+
+    localStorage.setItem("BankAccount", JSON.stringify(accounts));
+    event.target.reset();
+  });
+</script>
